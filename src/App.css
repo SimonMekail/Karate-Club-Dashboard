@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+/* :root {
+  --karate-primary: #00796b;
+  --karate-primary-light: #48a999;
+  --karate-primary-dark: #004c40;
+  --karate-secondary: #263238;
+  --karate-secondary-light: #4f5b62;
+  --karate-secondary-dark: #000a12;
+  --karate-accent: #ffc107;
+  --karate-accent-light: #fff350;
+  --karate-accent-dark: #c79100;
+  --karate-background: #f1f8f7;
+  --karate-card: #ffffff;
+  --karate-text: #37474f;
+  --karate-text-light: #607d8b;
+  --karate-border: #cfd8dc;
+  --karate-error: #d32f2f;
+} */
+
+/* :root {
+  --karate-primary: #d32f2f;
+  --karate-primary-light: #ff6659;
+  --karate-primary-dark: #9a0007;
+  --karate-secondary: #212121;
+  --karate-secondary-light: #484848;
+  --karate-secondary-dark: #000000;
+  --karate-accent: #ff9800;
+  --karate-accent-light: #ffc947;
+  --karate-accent-dark: #c66900;
+  --karate-background: #f5f5f5;
+  --karate-card: #ffffff;
+  --karate-text: #333333;
+  --karate-text-light: #666666;
+  --karate-border: #e0e0e0;
+  --karate-error: #ff1744;
+} */
+
+/* :root {
+  --karate-primary: #1976d2;
+  --karate-primary-light: #63a4ff;
+  --karate-primary-dark: #004ba0;
+  --karate-secondary: #263238;
+  --karate-secondary-light: #4f5b62;
+  --karate-secondary-dark: #000a12;
+  --karate-accent: #ffa000;
+  --karate-accent-light: #ffd149;
+  --karate-accent-dark: #c67100;
+  --karate-background: #f5f7fa;
+  --karate-card: #ffffff;
+  --karate-text: #37474f;
+  --karate-text-light: #607d8b;
+  --karate-border: #cfd8dc;
+  --karate-error: #d32f2f;
+} */
+
+/* :root {
+  --karate-primary: #6a1b9a;
+  --karate-primary-light: #9c4dcc;
+  --karate-primary-dark: #38006b;
+  --karate-secondary: #212121;
+  --karate-secondary-light: #484848;
+  --karate-secondary-dark: #000000;
+  --karate-accent: #ffab00;
+  --karate-accent-light: #ffdd4b;
+  --karate-accent-dark: #c67c00;
+  --karate-background: #f5f3f7;
+  --karate-card: #ffffff;
+  --karate-text: #333333;
+  --karate-text-light: #666666;
+  --karate-border: #e0e0e0;
+  --karate-error: #e53935;
+} */
+
+/* :root {
+  --karate-primary: #ff5722;
+  --karate-primary-light: #ff8a50;
+  --karate-primary-dark: #c41c00;
+  --karate-secondary: #212121;
+  --karate-secondary-light: #484848;
+  --karate-secondary-dark: #000000;
+  --karate-accent: #4caf50;
+  --karate-accent-light: #80e27e;
+  --karate-accent-dark: #087f23;
+  --karate-background: #fcf5f3;
+  --karate-card: #ffffff;
+  --karate-text: #333333;
+  --karate-text-light: #666666;
+  --karate-border: #e0e0e0;
+  --karate-error: #d32f2f;
+} */
+
+/* :root {
+  --karate-primary: #3f51b5;
+  --karate-primary-light: #757de8;
+  --karate-primary-dark: #002984;
+  --karate-secondary: #1a237e;
+  --karate-secondary-light: #534bae;
+  --karate-secondary-dark: #000051;
+  --karate-accent: #ff9800;
+  --karate-accent-light: #ffc947;
+  --karate-accent-dark: #c66900;
+  --karate-background: #f5f7fa;
+  --karate-card: #ffffff;
+  --karate-text: #2a3f54;
+  --karate-text-light: #5a6a7e;
+  --karate-border: #e0e0e0;
+  --karate-error: #f44336;
+} */
+
+:root {
+  --karate-primary: #364f8b; /* Main dark blue */
+  --karate-primary-light: #5fc1c9; /* Light teal */
+  --karate-primary-dark: #2a3e6d; /* Darker shade of primary */
+  --karate-secondary: #5fc1c9; /* Teal as secondary */
+  --karate-secondary-light: #a8e6ef; /* Lighter teal */
+  --karate-secondary-dark: #3a8a94; /* Darker teal */
+  --karate-accent: #fc5185; /* Pink accent */
+  --karate-accent-light: #ff8fb3; /* Lighter pink */
+  --karate-accent-dark: #e04070; /* Darker pink */
+  --karate-background: #f5f7fa; /* Light background */
+  --karate-card: #ffffff; /* White cards */
+  --karate-text: #2a3f54; /* Dark text */
+  --karate-text-light: #5a6a7e; /* Lighter text */
+  --karate-border: #e0e0e0; /* Border color */
+  --karate-error: #f44336; /* Error red */
+  --karate-primary-rgb: 13, 71, 161;
+  --karate-error-rgb: 220, 53, 69;
+}
+
+[data-theme="dark"] {
+  /* Dark mode color scheme */
+  --karate-primary: #5fc1c9; /* Light teal becomes primary in dark mode */
+  --karate-primary-light: #a8e6ef; /* Lighter teal */
+  --karate-primary-dark: #3a8a94; /* Darker teal */
+
+  --karate-secondary: #364f8b; /* Dark blue becomes secondary */
+  --karate-secondary-light: #4a6bb3; /* Lighter blue */
+  --karate-secondary-dark: #2a3e6d; /* Darker blue */
+
+  --karate-accent: #fc5185; /* Pink accent (can stay vibrant) */
+  --karate-accent-light: #ff8fb3; /* Lighter pink */
+  --karate-accent-dark: #e04070; /* Darker pink */
+
+  /* UI colors */
+  --karate-background: #1a1f2b; /* Dark blue-gray background */
+  --karate-card: #252f3f; /* Slightly lighter cards */
+  --karate-text: #e0e6f0; /* Light text */
+  --karate-text-light: #a8b3c5; /* Secondary text */
+  --karate-border: #3a4556; /* Dark borders */
+
+  /* Keep these the same as they're situational */
+  --karate-error: #f44336;
+  --karate-primary-rgb: 13, 71, 161;
+  --karate-error-rgb: 220, 53, 69;
+} /* Ensure CSS variables work in table elements */
+
+* {
+  font-family: "Tajawal", sans-serif;
+}
+
+body {
+  background-color: var(--karate-background);
+}
+
+.backGroundColor {
+  background-color: var(--karate-background);
+}
+
+.table {
+  color: var(--karate-text) !important;
+  background-color: var(--karate-card) !important;
+}
+
+.table thead {
+  background-color: var(--karate-card) !important;
+  color: var(--karate-text) !important;
+}
+
+th,
+td {
+  color: inherit !important;
+  background-color: inherit !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(var(--karate-primary-rgb), 0.1) !important;
+  color: var(--karate-primary) !important;
+}
+
+.filterBtn {
+  background: var(--karate-card);
+  border: 1px solid var(--karate-border);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--karate-text);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.filterBtn:hover,
+.filterBtnActive {
+  background: var(--karate-primary);
+  color: white;
+  border-color: var(--karate-primary);
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.actionBtn {
+  background: var(--karate-card);
+  border: 1px solid var(--karate-border);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--karate-text);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.actionBtn:hover {
+  border-color: var(--karate-primary);
+}
+
+.rightControls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.filterControls {
+  display: flex;
+  gap: 1rem;
+}
+
+.beltWhite {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #dee2e6;
+}
+
+.beltYellow {
+  background-color: #ffd700;
+  color: #212529;
+}
+
+.beltOrange {
+  background-color: #ff8c00;
+  color: white;
+}
+
+.beltGreen {
+  background-color: #228b22;
+  color: white;
+}
+
+.beltBlue {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.beltPurple {
+  background-color: #9370db;
+  color: white;
+}
+
+.beltBrown {
+  background-color: #8b4513;
+  color: white;
+}
+
+.beltBlack {
+  background-color: #000000;
+  color: white;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-image {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #6c757d;
+}
+
+/* Belts Ranks Style */
+
+.timeline-rtl {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline-rtl::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--karate-border);
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  margin-right: -3px;
+  border-radius: 10px;
+}
+.belt-container-rtl {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.belt-container-rtl::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -17px;
+  background-color: white;
+  border: 4px solid var(--karate-primary);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.belt-container-rtl.right {
+  right: 0;
+}
+.belt-container-rtl.left {
+  right: 50%;
+}
+
+.belt-container-rtl.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--karate-card);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--karate-card);
+}
+
+.belt-container-rtl.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--karate-card);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--karate-card) transparent transparent;
+}
+.belt-container-rtl.left::after {
+  right: -16px;
+}
+
+.belt-content {
+  padding: 20px 30px;
+  background-color: var(--karate-card);
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.belt-stripe {
+  height: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.cost-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.9rem;
+  background-color: var(--karate-primary);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-rtl::after {
+    right: 31px;
+  }
+  .belt-container-rtl {
+    width: 100%;
+    padding-right: 70px;
+    padding-left: 25px;
+  }
+  .belt-container-rtl::before {
+    right: 60px;
+    border: medium solid var(--karate-card);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--karate-card);
+  }
+  .belt-container-rtl.left::after,
+  .belt-container-rtl.right::after {
+    right: 15px;
+  }
+  .belt-container-rtl.left {
+    right: 0%;
+  }
+}

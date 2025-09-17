@@ -1,0 +1,43 @@
+.navbar {
+  background-color: var(--karate-card);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--karate-border);
+}
+
+.navbar-brand:hover,
+.nav-link:hover,
+.navbar-toggler:hover {
+  color: var(--karate-accent) !important;
+}
+
+.nav-link.active {
+  color: var(--karate-accent) !important;
+  font-weight: bold;
+}
+
+.dropdown-item:hover {
+  background-color: var(--karate-primary-light);
+  color: white !important;
+}
+
+.userProfile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: var(--karate-card);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+  }
+
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+}

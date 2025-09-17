@@ -1,0 +1,135 @@
+.sidebar {
+  background-color: var(--karate-primary);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  transition: all 0.3s;
+  width: 250px;
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebarDark {
+  background-color: var(--karate-secondary-dark);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  transition: all 0.3s;
+  width: 250px;
+  padding: 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.navLink {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.navLink:hover,
+.navLink:global(.active) {
+  background-color: var(--karate-accent);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navLink:global(.active) {
+  font-weight: 500;
+}
+
+.icon {
+  margin-right: 12px;
+  font-size: 1.1em;
+  color: var(--karate-secondary-light);
+}
+
+.iconDark {
+  margin-right: 12px;
+  font-size: 1.1em;
+  color: var(--karate-primary-light);
+}
+
+.navLink:hover .icon,
+.navLink:global(.active) .icon {
+  color: white;
+}
+
+.navList {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar-header {
+  padding: 10px 0 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sidebar-logo span {
+  color: var(--karate-accent);
+}
+
+
+@media (max-width: 1800px) {
+  .sidebar {
+    width: 230px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .sidebar {
+    width: 220px;
+  }
+
+  .sidebar-logo {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .sidebar {
+    width: 210px;
+    padding: 18px;
+  }
+
+  .navLink {
+    padding: 0.7rem 0.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 210px;
+    padding: 15px;
+  }
+
+  .navLink {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .icon {
+    margin-right: 10px;
+    font-size: 1em;
+  }
+
+  .sidebar-logo {
+    font-size: 1.3rem;
+  }
+}

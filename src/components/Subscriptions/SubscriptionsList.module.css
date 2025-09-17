@@ -1,0 +1,231 @@
+
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background: var(--karate-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--karate-border);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--karate-primary);
+  border-bottom: 1px solid var(--karate-border);
+}
+
+.memberName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.statusBadge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.classInfo {
+  padding: 16px;
+  border-bottom: 1px solid var(--karate-border);
+}
+
+.className {
+  font-weight: 500;
+  color: var(--karate-text);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.beltInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.beltName {
+  color: var(--karate-text);
+}
+
+.beltDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.datesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 16px;
+}
+
+.dateItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.dateLabel {
+  font-size: 0.75rem;
+  color: var(--karate-text-light);
+  margin-bottom: 4px;
+}
+
+.dateValue {
+  font-weight: 500;
+  color: var(--karate-text);
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  padding: 0 16px 16px;
+  gap: 8px;
+}
+
+.actionBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: var(--karate-background);
+  color: var(--karate-text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actionBtn i {
+  font-size: 0.9rem;
+}
+
+.editBtn {
+  background: rgba(var(--karate-primary-rgb), 0.1);
+  color: var(--karate-primary-dark);
+}
+
+.editBtn:hover {
+  background: rgba(var(--karate-primary-rgb), 0.2);
+}
+
+.deleteBtn {
+  background: rgba(var(--karate-error-rgb), 0.1);
+  color: var(--karate-error);
+}
+
+.deleteBtn:hover {
+  background: rgba(var(--karate-error-rgb), 0.2);
+}
+
+.emptyState {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  color: var(--karate-primary-light);
+  margin-bottom: 16px;
+}
+
+.emptyTitle {
+  color: var(--karate-text);
+  margin-bottom: 8px;
+}
+
+.emptyText {
+  color: var(--karate-text-light);
+  margin: 0;
+}
+
+
+.beltWhite {
+  background: #ffffff;
+  border: 1px solid var(--karate-border);
+}
+.beltYellow {
+  background: #ffeb3b;
+}
+.beltOrange {
+  background: #ff9800;
+}
+.beltGreen {
+  background: #4caf50;
+}
+.beltBlue {
+  background: #2196f3;
+}
+.beltPurple {
+  background: #9c27b0;
+}
+.beltBrown {
+  background: #795548;
+}
+.beltBlack {
+  background: #212121;
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .datesContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--karate-light);
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.priceLabel {
+  font-weight: 600;
+  color: var(--karate-dark);
+}
+
+.priceValue {
+  font-weight: 700;
+  color: var(--karate-primary);
+  font-size: 1.1rem;
+}
