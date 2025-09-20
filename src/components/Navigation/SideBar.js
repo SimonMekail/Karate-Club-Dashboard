@@ -36,7 +36,6 @@ const SideBar = () => {
             الصفحة الرئيسية{" "}
           </NavLink>
         </li>
-        {user.userName === "mekdadsalloum" ? (
           <li className="nav-item">
             <NavLink className={styles.navLink} to="/users" end>
               <i
@@ -47,7 +46,6 @@ const SideBar = () => {
               الموظفين{" "}
             </NavLink>
           </li>
-        ) : null}
         <li className="nav-item">
           <NavLink className={styles.navLink} to="/members" end>
             <i
@@ -166,3 +164,4 @@ const SideBar = () => {
 };
 
 export default SideBar;
+
